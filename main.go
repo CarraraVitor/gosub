@@ -1,19 +1,27 @@
 package main
 
 import (
+    "flag"
 	"fmt"
 	"gosub/subway"
+	subcsv "gosub/subway/csv"
 	"log"
 	"net/http"
 	"os"
 	"strings"
 )
 
-const ADDR = "127.0.0.1"
+const ADDR = "0.0.0.0"
 const PORT = 8000
 
 func main() {
+    bs_flag := flag.Bool("boostrapdb", false, "Bootstraps the database with values readen from csv files")
+    flag.Parse()
+
     initdb()
+    if *bs_flag {
+        bootstrapdb()
+    }
     
     router := http.NewServeMux()
 
@@ -37,6 +45,20 @@ func main() {
 func initdb() {
 	execfile("./db/db.sql")
 	execfile("./db/upt.sql")
+}
+
+func bootstrapdb() {
+    file , err := os.ReadFile("./csvfiles.txt")
+    if err != nil {
+        panic("bootstrapdb: couldn't open csv files")
+    }
+    names := strings.Split(string(file), ",")
+    if len(names) != 3 {
+        panic(fmt.Sprintf("bootstrapdb: wrong amount of csv files. want 3 got %d", len(names))) 
+    }
+    subcsv.InsertNodesFromCSV(strings.TrimSpace(names[0]))
+    subcsv.InsertLanesFromCSV(strings.TrimSpace(names[1]))
+    subcsv.InsertEdgesFromCSV(strings.TrimSpace(names[2]))
 }
 
 func execfile(name string) {

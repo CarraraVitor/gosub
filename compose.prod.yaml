@@ -55,6 +55,7 @@ services:
       mode: replicated
       replicas: 3
     restart: always
+    command: ["./main", "-bootstrap=${GOSUB_BOOTSTRAP}"]
 
 volumes:
   letsencrypt:
