@@ -35,7 +35,7 @@ services:
       - "traefik.http.routers.sciquiz.tls.certresolver=myresolver"
       - "com.centurylinklabs.watchtower.enable=true"
     volumes:
-      - ~/sciquiz/db/:/sciquiz/db/
+      - ~/jobs/sciquiz/db/:/sciquiz/db/
     deploy:
       mode: replicated
       replicas: 3
@@ -50,7 +50,7 @@ services:
       - "traefik.http.routers.gosub.tls.certresolver=myresolver"
       - "com.centurylinklabs.watchtower.enable=true"
     volumes:
-      - ~/gosub/db/:/gosub/db/
+      - ~/apps/gosub/db/:/gosub/db/
     deploy:
       mode: replicated
       replicas: 3

@@ -17,6 +17,7 @@ const PORT = 8000
 func main() {
     bs_flag := flag.Bool("boostrapdb", false, "Bootstraps the database with values readen from csv files")
     flag.Parse()
+    log.Printf("Flags Parsed. BS Flag value = %t\n", *bs_flag)
 
     initdb()
     if *bs_flag {
@@ -43,15 +44,19 @@ func main() {
 }
 
 func initdb() {
+	log.Printf("[INFO] Executing db.sql\n")
 	execfile("./db/db.sql")
+	log.Printf("[INFO] Executing upt.sql\n")
 	execfile("./db/upt.sql")
 }
 
 func bootstrapdb() {
+	log.Printf("[INFO] Bootstraping db\n")
     file , err := os.ReadFile("./csvfiles.txt")
     if err != nil {
         panic("bootstrapdb: couldn't open csv files")
     }
+	log.Printf("[INFO] Successfully read csvfiles.txt\n")
     names := strings.Split(string(file), ",")
     if len(names) != 3 {
         panic(fmt.Sprintf("bootstrapdb: wrong amount of csv files. want 3 got %d", len(names))) 
@@ -59,6 +64,7 @@ func bootstrapdb() {
     subcsv.InsertNodesFromCSV(strings.TrimSpace(names[0]))
     subcsv.InsertLanesFromCSV(strings.TrimSpace(names[1]))
     subcsv.InsertEdgesFromCSV(strings.TrimSpace(names[2]))
+	log.Printf("[INFO] All Insert Functions were Called\n")
 }
 
 func execfile(name string) {
