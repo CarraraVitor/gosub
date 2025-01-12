@@ -15,6 +15,8 @@ RUN apk --no-cache add ca-certificates curl
 WORKDIR /gosub
 COPY --from=builder /gosub/main main
 COPY ./static ./static/
+COPY ./subway/templates/ ./subway/templates/
+COPY ./subway/style/ ./subway/style/
 EXPOSE 8000
 
 CMD ["./main"]
