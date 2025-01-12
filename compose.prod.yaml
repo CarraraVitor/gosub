@@ -41,5 +41,20 @@ services:
       replicas: 3
     restart: always
 
+  gosub:
+    image: ghcr.io/carraravitor/gosub:prod
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.gosub.rule=Host(`comochegar.info`)"
+      - "traefik.http.routers.gosub.entrypoints=websecure"
+      - "traefik.http.routers.gosub.tls.certresolver=myresolver"
+      - "com.centurylinklabs.watchtower.enable=true"
+    volumes:
+      - ~/gosub/db/:/gosub/db/
+    deploy:
+      mode: replicated
+      replicas: 3
+    restart: always
+
 volumes:
   letsencrypt:
