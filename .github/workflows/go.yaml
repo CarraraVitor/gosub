@@ -51,4 +51,4 @@ jobs:
         with:
           context: .
           push: true
-          tags: ghcr.io/carraravitor/sciquiz:prod
+          tags: ghcr.io/carraravitor/gosub:prod
