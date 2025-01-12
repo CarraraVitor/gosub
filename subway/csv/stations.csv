@@ -1,0 +1,202 @@
+id,name,lane
+1,Tucuruvi,1
+2,Parada Inglesa,1
+3,Jardim São Paulo-Ayrton Senna,1
+4,Santana,1
+5,Carandiru,1
+6,Portuguesa-Tiête,1
+7,Armênia,1
+8,Tiradentes,1
+9,Luz,1
+10,Luz,4
+11,Luz,7
+12,Luz,10
+13,Luz,11
+14,São Bento,1
+15,Sé,1
+16,Sé,3
+17,Japão-Liberdade,1
+18,São Joaquim,1
+19,Vergueiro,1
+20,Paraíso,1
+21,Paraíso,2
+22,Ana Rosa,1
+23,Ana Rosa,2
+24,Vila Mariana,1
+25,Santa Cruz,1
+26,Santa Cruz,5
+27,Praça da Árvore,1
+28,Saúde,1
+29,São Judas,1
+30,Conceição,1
+31,Jabaquara,1
+32,Vila Madalena,2
+33,Sumaré,2
+34,Clínicas,2
+35,Consolação,2
+36,Consolação,4
+37,Trianon-Masp,2
+38,Brigadeiro,2
+39,Chácara Klabin,2
+40,Chácara Klabin,5
+41,Santos-Imigrantes,2
+42,Alto do Ipiranga,2
+43,Sacomã,2
+44,Tamanduateí,2
+45,Tamanduateí,10
+46,Vila Prudente,2
+47,Vila Prudente,15
+48,Palmeiras-Barra Funda,3
+49,Palmeiras-Barra Funda,7
+50,Palmeiras-Barra Funda,8
+51,Marechal Deodoro,3
+52,Santa Cecília,3
+53,República,3
+54,República,4
+55,Anhangabaú,3
+56,Pedro II,3
+57,Brás,3
+58,Brás,7
+59,Brás,10
+60,Brás,11
+61,Brás,12
+62,Bresser-Mooca,3
+63,Belém,3
+64,Tatuapé,3
+65,Tatuapé,11
+66,Tatuapé,12
+67,Carrão,3
+68,Penha,3
+69,Vila Matilde,3
+70,Guilhermina Esperança,3
+71,Patriarca-Vila Ré,3
+72,Artur Alvim,3
+73,Corinthians-Itaquera,3
+74,Corinthians-Itaquera,11
+75,Vila Sônia,4
+76,São Paulo-Morumbi,4
+77,Butantã,4
+78,Pinheiros,4
+79,Pinheiros,9
+80,Faria Lima,4
+81,Fradique Coutinho,4
+82,Oscar Freire,4
+83,Paulista,4
+84,Paulista,2
+85,Higienópolis-Mackenzie,4
+86,Capão Redondo,5
+87,Campo Limpo,5
+88,Vila das Belezas,5
+89,Giovani Gronchi,5
+90,Santo Amaro,5
+91,Santo Amaro,9
+92,Largo Treze,5
+93,Adolfo Pinheiro,5
+94,Alto da Bela Vista,5
+95,Borba Gato,5
+96,Brooklin,5
+97,Campo Belo,5
+98,Eucaliptos,5
+99,Moema,5
+100,AACD-Servidor,5
+101,Hospital São Paulo,5
+102,Jundiaí,7
+103,Várzea Paulista,7
+104,Campo Limpo Paulista,7
+105,Botujuru,7
+106,Francisco Morato,7
+107,Baltazar Fidélis,7
+108,Caieiras,7
+109,Perus,7
+110,Vila Aurora,7
+111,Jaraguá,7
+112,Vila Clarice,7
+113,Pirituba,7
+114,Piqueri,7
+115,Lapa,7
+116,Água Branca,7
+117,Amador Bueno,8
+118,Santa Rita,8
+119,Itapevi,8
+120,Engenheiro Cardoso,8
+121,Sagrado Coração,8
+122,Jandira,8
+123,Jardim Silveira,8
+124,Barueri,8
+125,Antonio João,8
+126,Santa Terezinha,8
+127,Carapicuiba,8
+128,General Miguel Costa,8
+129,Quitaúna,8
+130,Comandante Sampaio,8
+131,Osasco,8
+132,Osasco,9
+133,Presidente Altino,8
+134,Presidente Altino,9
+135,Imperatriz Leopoldina,8
+136,Domingos de Moraes,8
+137,Lapa,8
+138,Júlio Prestes,8
+139,Ceasa,9
+140,Villa-Lobos-Jaguaré,9
+141,Cidade Universitária,9
+142,Hebraica-Rebouças,9
+143,Cidade Jardim,9
+144,Vila Olímpia,9
+145,Berrini,9
+146,Morumbi,9
+147,Granja Julieta,9
+148,João Dias,9
+149,Socorro,9
+150,Jurubatuba,9
+151,Autódromo,9
+152,Primavera-Interlagos,9
+153,Grajaú,9
+154,Bruno Covas-Mendes-Vila Natal,9
+155,Juventus-Mooca,10
+156,Ipiranga,10
+157,São Caetano do Sul,10
+158,Utinga,10
+159,Prefeito Saladino,10
+160,Santo André,10
+161,Capuava,10
+162,Mauá,10
+163,Guapituba,10
+164,Ribeirão Pires,10
+165,Rio Grande da Serra,10
+166,Dom Bosco,11
+167,José Bonifácio,11
+168,Guaianases,11
+169,Antonio Gianetti Neto,11
+170,Ferraz de Vasconcelos,11
+171,Poá,11
+172,Calmon Viana,11
+173,Calmon Viana,12
+174,Suzano,11
+175,Jundiapeba,11
+176,Braz Cubas,11
+177,Mogi das Cruzes,11
+178,Estudantes,11
+179,Engenheiro Goulart,12
+180,Engenheiro Goulart,13
+181,USP Leste,12
+182,Comendador Ermelino,12
+183,São Miguel Paulista,12
+184,Jardim Helena-Vila Mara,12
+186,Itaim Paulista,12
+187,Jardim Romano,12
+188,Engenheiro Manoel Feio,12
+189,Itaquaquecetuba,12
+190,Aracaré,12
+191,Guarulhos-Cecap,13
+192,Aeroporto-Guarulhos,13
+193,Oratório,15
+194,São Lucas,15
+195,Camilo Haddad,15
+196,Vila Tolstói,15
+197,Vila União,15
+198,Jardim Planalto,15
+199,Sapopemba,15
+200,Fazenda da Juta,15
+201,São Mateus,15
+202,Jardim Colonial,15

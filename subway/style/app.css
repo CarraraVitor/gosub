@@ -1,0 +1,104 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    @font-face {
+        font-family: "Jasmine Laslo Regular";
+        font-style: normal;
+        font-weight: normal;
+        src:
+            local("Jasmine Laslo Regular"),
+            url("fonts/jasminelaslo/Jasmine Laslo.woff") format("woff");
+    }
+
+    @font-face {
+        font-family: "PIGARNOS NEUE Regular";
+        font-style: normal;
+        font-weight: normal;
+        src:
+            local("PIGARNOS NEUE Regular"),
+            url("fonts/pigarnosneue/PIGARNOS NEUE Regular.woff") format("woff");
+    }
+
+    @font-face {
+        font-family: "Brightania";
+        font-style: normal;
+        font-weight: normal;
+        src:
+            local("Brightania"),
+            url("fonts/brightania/Brightania-BF653a280fc8130.woff") format("woff");
+    }
+
+    @font-face {
+        font-family: "Hight Night Regular";
+        font-style: normal;
+        font-weight: normal;
+        src:
+            local("Hight Night Regular"),
+            url("fonts/hightnight/Hight-Night-BF653934380691d.woff") format("woff");
+    }
+
+    @font-face {
+        font-family: "Helvetica";
+        font-style: normal;
+        font-weight: normal;
+        src:
+            local("Helvetica"),
+            url("fonts/helvetica/Helvetica.woff") format("woff");
+    }
+
+    @font-face {
+        font-family: "Helvetica Oblique";
+        font-style: normal;
+        font-weight: normal;
+        src:
+            local("Helvetica Oblique"),
+            url("fonts/helvetica/Helvetica-Oblique.woff") format("woff");
+    }
+
+    @font-face {
+        font-family: "Helvetica Compressed";
+        font-style: normal;
+        font-weight: normal;
+        src:
+            local("Helvetica Compressed"),
+            url("fonts/helvetica/helvetica-compressed-5871d14b6903a.woff") format("woff");
+    }
+
+    @font-face {
+        font-family: "Helvetica Rounded Bold";
+        font-style: normal;
+        font-weight: normal;
+        src:
+            local("Helvetica Rounded Bold"),
+            url("fonts/helvetica/helvetica-rounded-bold-5871d05ead8de.woff") format("woff");
+    }
+
+    @font-face {
+        font-family: "Helvetica";
+        font-style: normal;
+        font-weight: normal;
+        src:
+            local("Helvetica"),
+            url("fonts/helvetica/Helvetica-Bold.woff") format("woff");
+    }
+
+    @font-face {
+        font-family: "Helvetica Bold Oblique";
+        font-style: normal;
+        font-weight: normal;
+        src:
+            local("Helvetica Bold Oblique"),
+            url("fonts/helvetica/Helvetica-BoldOblique.woff") format("woff");
+    }
+
+    @font-face {
+        font-family: "Helvetica Light";
+        font-style: normal;
+        font-weight: normal;
+        src:
+            local("Helvetica Light"),
+            url("fonts/helvetica/helvetica-light-587ebe5a59211.woff") format("woff");
+    }
+}

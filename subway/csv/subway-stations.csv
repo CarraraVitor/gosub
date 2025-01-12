@@ -1,0 +1,200 @@
+nome,linha,vizinhos
+Tucuruvi,1,Parada Inglesa
+Parada Inglesa,1,Tucuruvi;Jardim São Paulo-Ayrton Senna
+Jardim São Paulo-Ayrton Senna,1,Parada Inglesa;Santana
+Santana,1,Jardim São Paulo-Ayrton Senna;Carandiru
+Carandiru,1,Santana;Portuguesa-Tiête
+Portuguesa-Tiête,1,Carandiru;Armênia
+Armênia,1,Portuguesa-Tiête;Tiradentes
+Tiradentes,1,Armênia;Luz
+Luz,1,Tiradentes;São Bento
+Luz,4,República
+Luz,7,Palmeiras-Barra Funda
+Luz,10,Brás
+Luz,11,Brás
+São Bento,1,Luz;Sé
+Sé,1,São Bento;Japão-Liberdade;Sé
+Sé,3,Pedro II;Anhangabaú;Sé
+Japão-Liberdade,1,Sé;São Joaquim
+São Joaquim,1,Japão-Liberdade;Vergueiro
+Vergueiro,1,São Joaquim;Paraíso
+Paraíso,1,Vergueiro;Ana Rosa;Paraíso
+Paraíso,2,Ana Rosa;Brigadeiro;Paraíso
+Ana Rosa,1,Paraíso;Vila Mariana;Ana Rosa
+Ana Rosa,2,Paraíso;Chácara Klabin;Ana Rosa
+Vila Mariana,1,Ana Rosa;Santa Cruz
+Santa Cruz,1,Vila Mariana;Praça da Árvore
+Santa Cruz,5,Hospital São Paulo;Chácara Klabin
+Praça da Árvore,1,Santa Cruz;Saúde
+Saúde,1,Praça da Árvore;São Judas
+São Judas,1,Saúde;Conceição
+Conceição,1,São Judas;Jabaquara
+Jabaquara,1,Conceição
+Vila Madalena,2,Sumaré
+Sumaré,2,Vila Madalena;Clínicas
+Clínicas,2,Sumaré;Consolação
+Consolação,2,Clínicas;Trianon-Masp
+Consolação,4,Higienópolis-Mackenzie;Oscar Freire
+Trianon-Masp,2,Consolação;Brigadeiro
+Brigadeiro,2,Trianon-Masp;Ana Rosa
+Chácara Klabin,2,Ana Rosa;Santos-Imigrantes
+Chácara Klabin,5,Santa Cruz
+Santos-Imigrantes,2,Chácara Klabin;Alto do Ipiranga
+Alto do Ipiranga,2,Santos-Imigrantes;Sacomã
+Sacomã,2,Alto do Ipiranga;Tamanduateí
+Tamanduateí,2,Sacomã;Vila Prudente
+Tamanduateí,10,Ipiranga;São Caetano do Sul
+Vila Prudente,2,Tamanduateí
+Vila Prudente,15,Oratório
+Palmeiras-Barra Funda,3,Marechal Deodoro
+Palmeiras-Barra Funda,7,Água Branca;Luz
+Palmeiras-Barra Funda,8,Lapa;Júlio Prestes
+Marechal Deodoro,3,Palmeiras-Barra Funda;Santa Cecília
+Santa Cecília,3,Marechal Deodoro;República
+República,3,Santa Cecília;Anhangabaú
+República,4,Luz;Higienópolis-Mackenzie
+Anhangabaú,3,República;Sé
+Pedro II,3,Sé;Brás
+Brás,3,Pedro II;Bresser-Mooca
+Brás,10,Juventus-Mooca;Luz
+Brás,11,Luz;Tatuapé
+Brás,12,Tatuapé
+Bresser-Mooca,3,Brás;Belém
+Belém,3,Bresser-Mooca;Tatuapé
+Tatuapé,3,Belém;Carrão
+Tatuapé,11,Brás;Corinthians-Itaquera
+Tatuapé,12,Brás;Engenheiro Goulart
+Carrão,3,Tatuapé;Penha
+Penha,3,Carrão;Vila Matilde
+Vila Matilde,3,Penha;Guilhermina Esperança
+Guilhermina Esperança,3,Vila Matilde;Patriarca-Vila Ré
+Patriarca-Vila Ré,3,Guilhermina Esperança;Artur Alvim
+Artur Alvim,3,Patriarca-Vila Ré;Corinthians-Itaquera
+Corinthians-Itaquera,3,Artur Alvim
+Corinthians-Itaquera,11,Tatuapé;Dom Bosco
+Vila Sônia,4,São Paulo-Morumbi
+São Paulo-Morumbi,4,Vila Sônia;Butantã
+Butantã,4,São Paulo-Morumbi;Pinheiros
+Pinheiros,4,Butantã;Faria Lima
+Pinheiros,9,Cidade Universitária;Hebraica-Rebouças
+Faria Lima,4,Pinheiros;Fradique Coutinho
+Fradique Coutinho,4,Faria Lima;Oscar Freire
+Oscar Freire,4,Fradique Coutinho;Paulista
+Paulista,4,Oscar Freire;Higienópolis-Mackenzie
+Higienópolis-Mackenzie,4,Paulista;República
+Capão Redondo,5,Campo Limpo
+Campo Limpo,5,Capão Redondo;Vila das Belezas
+Vila das Belezas,5,Campo Limpo;Giovani Gronchi
+Giovani Gronchi,5,Vila das Belezas;Santo Amaro
+Santo Amaro,5,Giovani Gronchi;Largo Treze
+Santo Amaro,9,João Dias;Socorro
+Largo Treze,5,Santo Amaro;Adolfo Pinheiro
+Adolfo Pinheiro,5,Largo Treze;Alto da Bela Vista
+Alto da Bela Vista,5,Adolfo Pinheiro;Borba Gato
+Borba Gato,5,Alto da Bela Vista;Brooklin
+Brooklin,5,Borba Gato;Campo Belo
+Campo Belo,5,Brooklin;Eucaliptos
+Eucaliptos,5,Campo Belo;Moema
+Moema,5,Eucaliptos;AACD-Servidor
+AACD-Servidor,5,Moema;Hospital São Paulo
+Hospital São Paulo,5,AACD-Servidor;Santa Cruz
+Jundiaí,7,Várzea Paulista
+Várzea Paulista,7,Jundiaí;Campo Limpo Paulista
+Campo Limpo Paulista,7,Várzea Paulista;Botujuru
+Botujuru,7,Campo Limpo Paulista;Francisco Morato
+Francisco Morato,7,Botujuru;Baltazar Fidélis
+Baltazar Fidélis,7,Francisco Morato;Caieiras
+Caieiras,7,Baltazar Fidélis;Perus
+Perus,7,Caieiras;Vila Aurora
+Vila Aurora,7,Perus;Jaraguá
+Jaraguá,7,Vila Aurora;Vila Clarice
+Vila Clarice,7,Jaraguá;Pirituba
+Pirituba,7,Vila Clarice;Piqueri
+Piqueri,7,Pirituba;Lapa
+Lapa,7,Piqueri;Água Branca
+Água Branca,7,Lapa;Palmeiras-Barra Funda
+Amador Bueno,8,Santa Rita
+Santa Rita,8,Amador Bueno;Itapevi
+Itapevi,8,Santa Rita;Engenheiro Cardoso
+Engenheiro Cardoso,8,Itapevi;Sagrado Coração
+Sagrado Coração,8,Engenheiro Cardoso;Jandira
+Jandira,8,Sagrado Coração;Jardim Silveira
+Jardim Silveira,8,Jandira;Barueri
+Barueri,8,Jardim Silveira;Antonio João
+Antonio João,8,Barueri;Santa Terezinha
+Santa Terezinha,8,Antonio João;Carapicuiba
+Carapicuiba,8,Santa Terezinha;General Miguel Costa
+General Miguel Costa,8,Carapicuiba;Quitaúna
+Quitaúna,8,General Miguel Costa;Comandante Sampaio
+Comandante Sampaio,8,Quitaúna;Osasco
+Osasco,8,Comandante Sampaio;Presidente Altino
+Osasco,9,Presidente Altino
+Presidente Altino,8,Osasco;Imperatriz Leopoldina
+Presidente Altino,9,Osasco;Ceasa
+Imperatriz Leopoldina,8,Presidente Altino;Domingos de Moraes
+Domingos de Moraes,8,Imperatriz Leopoldina;Lapa
+Lapa,8,Domingos de Moraes;Palmeiras-Barra Funda
+Júlio Prestes,8,Palmeiras-Barra Funda
+Ceasa,9,Presidente Altino;Villa-Lobos-Jaguaré
+Villa-Lobos-Jaguaré,9,Ceasa;Cidade Universitária
+Cidade Universitária,9,Villa-Lobos-Jaguaré;Pinheiros
+Hebraica-Rebouças,9,Pinheiros;Cidade Jardim
+Cidade Jardim,9,Hebraica-Rebouças;Vila Olímpia
+Vila Olímpia,9,Cidade Jardim;Berrini
+Berrini,9,Vila Olímpia;Morumbi
+Morumbi,9,Berrini;Granja Julieta
+Granja Julieta,9,Morumbi;João Dias
+João Dias,9,Granja Julieta;Santo Amaro
+Socorro,9,Santo Amaro;Jurubatuba
+Jurubatuba,9,Socorro;Autódromo
+Autódromo,9,Jurubatuba;Primavera-Interlagos
+Primavera-Interlagos,9,Autódromo;Grajaú
+Grajaú,9,Primavera-Interlagos;Bruno Covas-Mendes-Vila Natal
+Bruno Covas-Mendes-Vila Natal,9,Grajaú
+Juventus-Mooca,10,Brás;Ipiranga
+Ipiranga,10,Juventus-Mooca;Tamanduateí
+São Caetano do Sul,10,Tamanduateí;Utinga
+Utinga,10,São Caetano do Sul;Prefeito Saladino
+Prefeito Saladino,10,Utinga;Santo André
+Santo André,10,Prefeito Saladino;Capuava
+Capuava,10,Santo André;Mauá
+Mauá,10,Capuava;Guapituba
+Guapituba,10,Mauá;Ribeirão Pires
+Ribeirão Pires,10,Guapituba;Rio Grande da Serra
+Rio Grande da Serra,10,Ribeirão Pires
+Dom Bosco,11,Corinthians-Itaquera;José Bonifácio
+José Bonifácio,11,Dom Bosco;Guaianases
+Guaianases,11,José Bonifácio;Antonio Gianetti Neto
+Antonio Gianetti Neto,11,Guaianases;Ferraz de Vasconcelos
+Ferraz de Vasconcelos,11,Antonio Gianetti Neto;Poá
+Poá,11,Ferraz de Vasconcelos;Calmon Viana
+Calmon Viana,11,Poá;Suzano
+Calmon Viana,12,Aracaré
+Suzano,11,Calmon Viana;Jundiapeba
+Jundiapeba,11,Suzano;Braz Cubas
+Braz Cubas,11,Jundiapeba;Mogi das Cruzes
+Mogi das Cruzes,11,Braz Cubas;Estudantes
+Estudantes,11,Mogi das Cruzes
+Engenheiro Goulart,12,Tatuapé;USP Leste
+Engenheiro Goulart,13,Guarulhos-Cecap
+USP Leste,12,Engenheiro Goulart;Comendador Ermelino
+Comendador Ermelino,12,USP Leste;São Miguel Paulista
+São Miguel Paulista,12,Comendador Ermelino;Jardim Helena-Vila Mara
+Jardim Helena-Vila Mara,12,São Miguel Paulista;Itaim Paulista
+Itaim Paulista,12,Jardim Helena-Vila Mara;Jardim Romano
+Jardim Romano,12,Itaim Paulista;Engenheiro Manoel Feio
+Engenheiro Manoel Feio,12,Jardim Romano;Itaquaquecetuba
+Itaquaquecetuba,12,Engenheiro Manoel Feio;Aracaré
+Aracaré,12,Itaquaquecetuba;Calmon Viana
+Guarulhos-Cecap,13,Engenheiro Goulart;Aeroporto-Guarulhos
+Aeroporto-Guarulhos,13,Guarulhos-Cecap
+Oratório,15,Vila Prudente;São Lucas
+São Lucas,15,Oratório;Camilo Haddad
+Camilo Haddad,15,São Lucas;Vila Tolstói
+Vila Tolstói,15,Camilo Haddad;Vila União
+Vila União,15,Vila Tolstói;Jardim Planalto
+Jardim Planalto,15,Vila União;Sapopemba
+Sapopemba,15,Jardim Planalto;Fazenda da Juta
+Fazenda da Juta,15,Sapopemba;São Mateus
+São Mateus,15,Fazenda da Juta;Jardim Colonial
+Jardim Colonial,15,São Mateus

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en" data-theme={{.Theme}}>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/htmx.org@2.0.1"></script>
+    <link rel="stylesheet" href="/subway/style/output.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css" />
+    <title>Como Chegar?</title>
+</head>
+
+<script>
+    function toggle() {
+        let theme = localStorage.getItem('theme') === 'dark' ? 'light' : 'dark'
+        localStorage.setItem('theme', theme);
+        let addr = `http://${window.location.host}/?theme=${theme}`
+        window.location.href = addr
+    }
+</script>
+
+<body class="font-helvetica">
+    <nav class="flex items-center justify-between m-5 pb-5 border-b-2 border-b-gray-400">
+        <div class="filler"> </div>
+        <div class="">
+                <span class="mr-2 text-9xl font-hightnight"> COMO CHEGAR? </span>
+        </div>
+        <div class="">
+            <button onclick="toggle()">
+                Alternar Tema 
+            </button>
+        </div>
+    </nav>
+
+
+    <main class="flex flex-row flex-wrap justify-between p-5 min-h-screen">
+
+        <section class="h-full border border-gray-200 flex flex-col justify-center">
+            <div class="border border-black"> </div>
+        </section>
+        
+        <section class="max-w-[80%]">
+            <form hx-post="/subway/path" hx-target="#pathdiv" hx-swap="innerHTML">
+                <div class="flex gap-10 justify-center flex-wrap">
+                    <div class="flex flex-col gap-3">
+                        <!--class="text-md text-center text-gray-500"-->
+                        <div >Partindo de </div>
+                        <!--class="rounded-md bg-white px-3 py-2 text-sm text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300" -->
+                        <select 
+                                name="SelectedLane" hx-get="/subway/nodes" hx-target="#station-from" hx-swap="innerHTML">
+                            <option hidden value="null">Lorem ipsum dolor sit amet labore.</option>
+                            <option selected disabled value="0">Linha</option>
+                            {{ range .Subway.Lanes }}
+                            <option class="" value="{{.Id}}">
+                                {{.Id}} - {{.Name}}
+                            </option>
+                            {{ end }}
+                        </select>
+                        <!--class="rounded-md bg-white px-3 py-2 text-sm text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300" -->
+                        <select 
+                                id="station-from" name="StationFrom">
+                            <option selected disabled value="0">Estação</option>
+                        </select>
+                    </div>
+
+                    <div class="flex flex-col gap-3">
+                        <!--class="text-md text-center text-gray-500"-->
+                        <div >Chegar em </div>
+                        <!--class="rounded-md bg-white px-3 py-2 text-sm text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300"-->
+                        <select 
+                            name="SelectedLane" hx-get="/subway/nodes" hx-target="#station-to" hx-swap="innerHTML">
+                            <option hidden value="null">Lorem ipsum dolor sit amet labore.</option>
+                            <option selected disabled value="0">Linha</option>
+                            {{ range .Subway.Lanes }}
+                            <option class="" value="{{.Id}}">
+                                {{.Id}} - {{.Name}}
+                            </option>
+                            {{ end }}
+                        </select>
+                        <!--class="rounded-md bg-white px-3 py-2 text-sm text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300" -->
+                        <select 
+                            id="station-to" name="StationTo">
+                            <option selected disabled value="0">Estação</option>
+                        </select>
+                    </div>
+                    <!--class="px-4 py-2 border border-gray-700 rounded-lg  bg-gray-400 hover:bg-gray-600 text-white shadow-sm ring-1 ring-inset ring-gray-300" >-->
+                    <button>
+                        Caminhos
+                    </button>
+                </div>
+            </form>
+
+            <div id="pathdiv" class="mt-5"></div>
+
+        </section >
+            
+        <section class="h-full border border-gray-200 flex flex-col justify-center">
+            <div class="border border-black"> </div>
+        </section>
+    </main>
+
+    <footer class="w-screen text-center border-y border-y-gray-300 p-3 bottom-0">
+        Copyright @ Carrara Software ₢ 2024
+    </footer>
+    <!-- load all necessary colors into the dom  -->
+    <div hidden class="bg-subwaylane-1 text-subwaylanetext-1"></div>
+    <div hidden class="bg-subwaylane-2 text-subwaylanetext-2"></div>
+    <div hidden class="bg-subwaylane-3 text-subwaylanetext-3"></div>
+    <div hidden class="bg-subwaylane-4 text-subwaylanetext-4"></div>
+    <div hidden class="bg-subwaylane-5 text-subwaylanetext-5"></div>
+    <div hidden class="bg-subwaylane-6 text-subwaylanetext-6"></div>
+    <div hidden class="bg-subwaylane-7 text-subwaylanetext-7"></div>
+    <div hidden class="bg-subwaylane-8 text-subwaylanetext-8"></div>
+    <div hidden class="bg-subwaylane-9 text-subwaylanetext-9"></div>
+    <div hidden class="bg-subwaylane-10 text-subwaylanetext-10"></div>
+    <div hidden class="bg-subwaylane-11 text-subwaylanetext-11"></div>
+    <div hidden class="bg-subwaylane-12 text-subwaylanetext-12"></div>
+    <div hidden class="bg-subwaylane-13 text-subwaylanetext-13"></div>
+    <div hidden class="bg-subwaylane-14 text-subwaylanetext-14"></div>
+    <div hidden class="bg-subwaylane-15 text-subwaylanetext-15"></div>
+</body>
+
+</html>

@@ -1,0 +1,4 @@
+<option selected disabled value="0">Estação</option>
+{{ range .Subway.Nodes}}
+<option class="font-helvetica" type="submit" value="{{.Id}}">{{.Name}}</option>
+{{ end }}

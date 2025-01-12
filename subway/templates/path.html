@@ -1,0 +1,52 @@
+{{ $add := .Add }}
+{{ $lanes := .LanesMap }}
+{{ $steps := .Parsed }}
+{{ range $i, $step := $steps }}
+    {{ $curdir := .Dir }}  
+    {{ $curlane := .Lane }}
+    {{ $path := .Path }}
+    <div class="border-y border-gray-200 text-xl py-8 font-helvetica font-normal">
+        {{ range $i, $node := $path }}
+            <div class="inline-flex flex-row my-1 border border-gray-200 rounded-r-md items-center"> 
+                {{ $bgclr := printf "%s%d" "bg-subwaylane-" $node.Lane }}
+                {{ $txtclr := printf "%s%d" "text-subwaylanetext-" $node.Lane }}
+                <span class="{{$bgclr}} {{$txtclr}} text-lg py-3 px-6"> {{$node.Lane}} </span>
+                <span class="py-3 px-6 text-md"> {{$node.Name}} </span>
+            </div>
+        {{ end }}
+    </div>
+    
+    {{ $nsteps := len $steps }}
+    {{ $last := call $add $nsteps -1 }}
+    {{ if lt $i $last }}
+        {{ $next := index $steps (call $add $i 1) }}
+        {{ $nextdir := $next.Dir }}
+        {{ $nextlane := $next.Lane }}
+        <div class="flex flex-row my-6 text-xl"> 
+            <div class="font-helvetica border border-gray-200 px-4 py-2" style="writing-mode: vertical-lr;text-orientation: upright;">
+                BALDEAÇÃO
+            </div>
+            <div class="flex flex-col justify-center gap-3 text-center border border-gray-200 rounded-r-md">
+
+                    {{ $bgclr := printf "%s%d" "bg-subwaylane-" $curlane.Id }}
+                    {{ $txtclr := printf "%s%d" "text-subwaylanetext-" $curlane.Id }}
+                    <div class="{{$bgclr}} {{$txtclr}} px-3 py-4">
+                        {{$curlane.Id}} - {{$curlane.Name}}
+                    </div>
+
+                    <div class="text-4xl"> &#8595; </div>
+                    
+                    {{ $bgclr := printf "%s%d" "bg-subwaylane-" $nextlane.Id }}
+                    {{ $txtclr := printf "%s%d" "text-subwaylanetext-" $nextlane.Id }}
+                    <div class="relative {{$bgclr}} {{$txtclr}} px-3 py-4">
+                        {{$nextlane.Id}} - {{$nextlane.Name}}
+                        {{ if ne $nextdir ""}}
+                        <div class="absolute px-3 py-4 text-gray-400 text-nowrap border border-gray-200 top-[0px] left-full">
+                            Sentido {{$nextdir}}
+                        </div>
+                        {{ end }}
+                    </div>
+            </div>
+        </div>
+    {{ end }}
+{{ end }}
